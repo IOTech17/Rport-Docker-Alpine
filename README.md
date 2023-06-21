@@ -3,6 +3,8 @@ repository to build a docker container for rport using alpine as the base image,
 Fail2ban and iptables are also running to further protect rport from scanner and password guessing attacks.
 You will need to add a config file (preferably as a mounted read-only volume pointing to your local file)
 
+If you want to use a database to store the data please follow this guide : https://oss.rport.io/get-started/api-authentication/
+
 docker-compose
 ```
 version: '3.9'
