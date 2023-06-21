@@ -20,9 +20,9 @@ services:
       - 20000:8080
       - 30000-30100:30000-30100
     volumes:
-     - /home/admiot/rport/rportd.conf:/etc/rport/rportd.conf:ro
-     - /home/admiot/rport/rport.key:/var/lib/rport/rport.key:ro
-     - /home/admiot/rport/rport.crt:/var/lib/rport/rport.crt:ro
+     - /home/user/rport/rportd.conf:/etc/rport/rportd.conf:ro
+     - /home/user/rport/rport.key:/var/lib/rport/rport.key:ro
+     - /home/user/rport/rport.crt:/var/lib/rport/rport.crt:ro
       - data:/var/lib/rport/
 
 volumes:
