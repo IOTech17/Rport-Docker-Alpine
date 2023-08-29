@@ -55,6 +55,8 @@ RUN touch /var/lib/rport/rport.log && chown rport /var/lib/rport/rport.log
 
 USER rport
 
+RUN chmod 755 -R /var/lib/rport/
+
 EXPOSE 8080
 EXPOSE 3000
 EXPOSE 20000-30000
